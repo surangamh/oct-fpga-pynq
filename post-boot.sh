@@ -7,7 +7,7 @@
 install_pkg() {
     echo "install pynq"
     sudo apt update
-    sudo apt install python3-pip
+    sudo apt install -y python3-pip
     yes | pip3 install pynq==2.7.0	    
 }
 
