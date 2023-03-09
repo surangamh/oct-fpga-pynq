@@ -77,7 +77,7 @@ for i in range(params.nodeCount):
   #
   host_iface = host.addInterface()
   host_iface.component_id = "eth3"
-  host_iface.addAddress(pg.IPv4Address("192.168.40." + str(i+10), "255.255.255.0"))
+  host_iface.addAddress(pg.IPv4Address("192.168.1." + str(i+10), "255.255.255.0"))
 
   lan.addInterface(host_iface)
 
