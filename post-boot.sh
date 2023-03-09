@@ -5,6 +5,8 @@
 #!/usr/bin/env bash
 
 install_pkg() {
+    echo "install pynq"
+    sudo apt update
     sudo apt install python3-pip
     pip3 install pynq==2.7.0	    
 }
